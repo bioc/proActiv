@@ -1,6 +1,6 @@
 Package: proActiv
 Title: Estimate Promoter Activity from RNA-Seq data
-Version: 1.13.0
+Version: 1.13.1
 Authors@R: c(
     person(given = "Deniz",
            family = "Demircioglu",
@@ -31,7 +31,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 4.0.0)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.1
 Imports: 
     AnnotationDbi,
     BiocParallel,
@@ -52,7 +52,8 @@ Imports:
     S4Vectors,
     SummarizedExperiment,
     stats,
-    tibble
+    tibble,
+    txdbmaker
 Suggests: 
     testthat,
     rmarkdown,
