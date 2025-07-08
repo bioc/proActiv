@@ -286,7 +286,7 @@ annotateIntronRanges <- function(intronRanges.unique, intronTable) {
 
 # Helper to parse input file
 #' @importFrom AnnotationDbi loadDb
-#' @importFrom GenomicFeatures makeTxDbFromGFF
+#' @importFrom txdbmaker makeTxDbFromGFF
 parseTxdb <- function(txdb, file, species) {
     
     if (missing(txdb) & missing(file)) {
@@ -312,7 +312,7 @@ parseTxdb <- function(txdb, file, species) {
         if (ext == 'sqlite') {
             txdb <- AnnotationDbi::loadDb(file)
         } else if (ext %in% c('gtf', 'gff3')) {
-            txdb <- GenomicFeatures::makeTxDbFromGFF(file = file,
+            txdb <- txdbmaker::makeTxDbFromGFF(file = file,
                                             format = ext,
                                             organism = sub('_', ' ', species))
         }
