@@ -1,6 +1,6 @@
 Package: proActiv
 Title: Estimate Promoter Activity from RNA-Seq data
-Version: 1.19.1
+Version: 1.19.2
 Authors@R: c(
     person(given = "Deniz",
            family = "Demircioglu",
@@ -43,6 +43,7 @@ Imports:
     GenomicFeatures,
     GenomicAlignments,
     GenomeInfoDb,
+    GenomeInfoDbData,
     ggplot2,
     gplots,
     graphics,
